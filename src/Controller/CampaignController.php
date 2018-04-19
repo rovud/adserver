@@ -1,6 +1,6 @@
 <?php
 
-namespace AdServer\Controller;
+namespace Rovud\AdServer\Controller;
 
 use Jacwright\RestServer\RestException;
 

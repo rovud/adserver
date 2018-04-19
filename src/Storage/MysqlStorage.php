@@ -1,11 +1,11 @@
 <?php
 
-namespace AdServer\Storage;
+namespace Rovud\AdServer\Storage;
 
 /**
  * Class MysqlStorage
  *
- * @package AdServer\Storage
+ * @package Rovud\AdServer\Storage
  */
 class MysqlStorage implements StorageInterface
 {

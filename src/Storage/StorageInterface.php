@@ -1,11 +1,11 @@
 <?php
 
-namespace AdServer\Storage;
+namespace Rovud\AdServer\Storage;
 
 /**
  * Interface StorageInterface
  *
- * @package AdServer\Storage
+ * @package Rovud\AdServer\Storage
  */
 interface StorageInterface
 {

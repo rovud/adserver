@@ -2,15 +2,13 @@
     "name": "rovud/adserver",
     "type": "library",
     "description": "Simple ad server",
-    "keywords": ["php", "rest", "rest-server", "light-weight", "http", "json", "mit"],
-    "homepage": "https://github.com/jacwright/RestServer",
+    "keywords": ["php", "rest", "ad-server"],
+    "homepage": "https://github.com/rovud/adserver",
     "license": "MIT",
     "authors": [
         {
-            "name": "Jacob Wright",
-            "email": "jacwright@gmail.com",
-            "homepage": "http://jacwright.com",
-            "role": "Developer"
+            "name": "Marat Gafiiatullin",
+            "email": "marat.webdev@gmail.com",
         }
     ],
     "minimum-stability": "dev",
@@ -19,7 +17,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Jacwright\\RestServer": "source/"
+            "Rovud\\AdServer": "src/"
         }
     }
 }
