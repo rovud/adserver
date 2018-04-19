@@ -1,14 +1,23 @@
 <?php
 
-namespace Rovud\AdServer\Storage;
+namespace Rovud\AdServer\Storage\Mysql;
+
+use Rovud\AdServer\Storage\StorageInterface;
 
 /**
- * Class FileStorage
+ * Class Storage
  *
- * @package Rovud\AdServer\Storage
+ * @package Rovud\AdServer\Storage\Mysql
  */
-class FileStorage implements StorageInterface
+class Storage implements StorageInterface
 {
+    protected $connection;
+
+    public function __construct($connection)
+    {
+        $this->connection = $connection;
+    }
+
     public function create(array $data)
     {
         // TODO: Implement create() method.

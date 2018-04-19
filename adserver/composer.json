@@ -13,9 +13,8 @@
     ],
     "require": {
         "php": ">=5.3.3",
-        "jacwright/restserver": "^1.2"
+        "jacwright/restserver": "dev-master"
     },
-    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "Rovud\\AdServer\\": "src/"

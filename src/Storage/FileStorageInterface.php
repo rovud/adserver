@@ -3,11 +3,11 @@
 namespace Rovud\AdServer\Storage;
 
 /**
- * Class MysqlStorage
+ * Class FileStorage
  *
  * @package Rovud\AdServer\Storage
  */
-class MysqlStorage implements StorageInterface
+class FileStorageInterface implements StorageInterface
 {
     public function create(array $data)
     {
