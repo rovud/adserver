@@ -8,16 +8,17 @@
     "authors": [
         {
             "name": "Marat Gafiiatullin",
-            "email": "marat.webdev@gmail.com",
+            "email": "marat.webdev@gmail.com"
         }
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": ">=5.3.3"
+        "php": ">=5.3.3",
+        "jacwright/restserver": "dev-master"
     },
     "autoload": {
-        "psr-0": {
-            "Rovud\\AdServer": "src/"
+        "psr-4": {
+            "Rovud\\AdServer\\": "src/"
         }
     }
 }
