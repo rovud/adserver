@@ -9,32 +9,11 @@ namespace Rovud\AdServer\Storage;
  */
 interface StorageInterface
 {
-    /**
-     * @param array $data
-     *
-     * @return mixed
-     */
-    public function create(array $data);
+    public function create($data);
 
-    /**
-     * @param int   $id
-     * @param array $data
-     *
-     * @return mixed
-     */
-    public function update(int $id, array $data);
+    public function update($id, $data);
 
-    /**
-     * @param int $id
-     *
-     * @return mixed
-     */
-    public function delete(int $id);
+    public function delete($id);
 
-    /**
-     * @param int $id
-     *
-     * @return mixed
-     */
-    public function find(int $id);
+    public function find($id);
 }

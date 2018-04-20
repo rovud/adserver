@@ -2,7 +2,7 @@
 
 namespace Rovud\AdServer\Controller;
 
-class CampaignController
+class BannerController
 {
     use InitStorageTrait;
 
@@ -10,7 +10,7 @@ class CampaignController
 
     public function __construct()
     {
-        $this->storage = $this->getStorage('campaign');
+        $this->storage = $this->getStorage('banner');
     }
 
     /**
@@ -26,7 +26,7 @@ class CampaignController
      *
      * @url DELETE /$id
      */
-    public function deleteCampaign($id)
+    public function deleteBanner($id)
     {
         $this->storage->delete($id);
 
@@ -34,12 +34,10 @@ class CampaignController
     }
 
     /**
-     * Saves a campaign to the storage
-     *
      * @url POST /
      * @url PUT /$id
      */
-    public function saveCampaign($id = null, $data)
+    public function saveBanner($id = null, $data)
     {
         if ($id !== null) {
             $this->storage->update($id, $data);
@@ -48,21 +46,5 @@ class CampaignController
         }
 
         return $id;
-    }
-
-    /**
-     * Saves a campaign with banners
-     */
-    public function campaignAndBanners($data)
-    {
-        $campaign_id = $this->storage->create($data);
-        $bannerStorage = $this->getStorage('banner');
-
-        foreach ($data->banners as $banner) {
-            $banner->campaign_id = $campaign_id;
-            $bannerStorage->create($banner);
-        }
-
-        return $campaign_id;
     }
 }
